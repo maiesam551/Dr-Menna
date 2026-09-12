@@ -1,0 +1,1971 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000;
+}
+
+.hero{
+
+    height:100vh;
+
+    background:url("images/hero.jpg") center center/cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding-top:75px;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+}
+
+.content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.content h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:70px;
+
+    color:#d4af37;
+
+    letter-spacing:3px;
+
+}
+
+.content h2{
+
+    margin-top:15px;
+
+    font-weight:400;
+
+    font-size:28px;
+
+}
+
+.content p{
+
+    margin-top:18px;
+
+    color:#ddd;
+
+}
+
+.enter-btn{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:16px 40px;
+
+    border-radius:40px;
+
+    background:#d4af37;
+
+    color:#000;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.enter-btn:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:0 0 30px #d4af37;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 30px #d4af37;
+
+}
+.archive{
+
+padding:90px 10%;
+
+background:#000;
+
+min-height:100vh;
+
+}
+
+.archive h1{
+
+text-align:center;
+
+color:#d4af37;
+
+font-size:48px;
+
+margin-bottom:70px;
+
+font-family:'Cinzel',serif;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:#111;
+
+border:1px solid rgba(212,175,55,.2);
+
+padding:35px;
+
+border-radius:20px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.02);
+
+box-shadow:0 0 35px rgba(212,175,55,.45);
+
+border-color:#d4af37;
+
+}
+
+.year{
+
+font-size:15px;
+
+color:#d4af37;
+
+letter-spacing:3px;
+
+}
+
+.card h2{
+
+margin:20px 0;
+
+}
+
+.card p{
+
+color:#aaa;
+
+}
+
+.card button{
+
+margin-top:30px;
+
+padding:12px 25px;
+
+background:#d4af37;
+
+border:none;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.bottom{
+
+text-align:center;
+
+margin-top:80px;
+
+}
+
+.certificateBtn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+background:#d4af37;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.certificateBtn:hover{
+
+box-shadow:0 0 35px #d4af37;
+
+}
+.videoPage{
+
+    min-height:100vh;
+
+    padding:70px;
+
+    background:#000;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.videoPage h1{
+
+    font-size:45px;
+
+    font-family:'Cinzel',serif;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+.videoPage p{
+
+    margin-bottom:30px;
+
+    color:#bbb;
+
+    font-size:18px;
+
+}
+
+.videoPage video{
+
+    width:80%;
+
+    max-width:900px;
+
+    border-radius:20px;
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+
+}
+
+.videoPage .enter-btn{
+
+    margin-top:40px;
+
+}
+.certificates-page{
+
+padding:80px 10%;
+
+background:#000;
+
+min-height:100vh;
+
+}
+
+.certificates-page h1{
+
+font-family:'Cinzel',serif;
+
+font-size:55px;
+
+color:#d4af37;
+
+text-align:center;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+color:#aaa;
+
+margin-top:15px;
+
+margin-bottom:70px;
+
+}
+
+.year-section{
+
+margin-bottom:70px;
+
+}
+
+.year-section h2{
+
+color:#d4af37;
+
+font-size:34px;
+
+margin-bottom:30px;
+
+border-left:4px solid #d4af37;
+
+padding-left:15px;
+
+}
+
+.certificate-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.certificate-card{
+
+background:#111;
+
+border:1px solid rgba(212,175,55,.25);
+
+border-radius:18px;
+
+padding:30px;
+
+text-decoration:none;
+
+transition:.4s;
+
+}
+
+.certificate-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#d4af37;
+
+box-shadow:0 0 30px rgba(212,175,55,.4);
+
+}
+
+.certificate-card h3{
+
+color:white;
+
+font-size:22px;
+
+margin-bottom:25px;
+
+}
+
+.certificate-card span{
+
+color:#d4af37;
+
+font-weight:600;
+
+}
+
+.back-home{
+
+text-align:center;
+
+margin-top:80px;
+
+}
+.certificate-view{
+
+    min-height:100vh;
+
+    background:#000;
+
+    padding:60px;
+
+    text-align:center;
+
+}
+
+.certificate-view h1{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:50px;
+
+    margin-bottom:40px;
+
+}
+
+.certificate-view img{
+
+    width:90%;
+
+    max-width:900px;
+
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+
+}
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:75px;
+
+    background:rgba(0,0,0,.88);
+
+    backdrop-filter:blur(8px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    z-index:999;
+
+    border-bottom:1px solid rgba(212,175,55,.25);
+
+}
+
+.logo{
+
+    font-family:'Cinzel',serif;
+
+    color:#d4af37;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.navbar ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.navbar ul li a:hover{
+
+    color:#d4af37;
+
+}
+/* ================= FOOTER ================= */
+
+.footer{
+
+    background:#050505;
+
+    text-align:center;
+
+    padding:8px 15px;
+
+    border-top:1px solid rgba(212,175,55,.12);
+
+}
+
+.footer h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:18px;
+
+    margin-bottom:3px;
+
+    letter-spacing:1px;
+
+}
+
+.footer p{
+
+    color:#bdbdbd;
+
+    margin:2px 0;
+
+    font-size:13px;
+
+    line-height:1.3;
+
+}
+
+.copy{
+
+    color:#666;
+
+    font-size:11px;
+
+    margin-top:5px;
+
+}
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.content h1{
+
+font-size:42px;
+
+}
+
+.content h2{
+
+font-size:20px;
+
+}
+
+.archive h1{
+
+font-size:38px;
+
+}
+
+.certificates-page h1{
+
+font-size:38px;
+
+}
+
+.videoPage h1{
+
+font-size:34px;
+
+}
+
+.navbar{
+
+padding:0 20px;
+
+}
+
+.navbar ul{
+
+gap:18px;
+
+}
+
+.navbar ul li a{
+
+font-size:15px;
+
+}
+
+video{
+
+width:100%;
+
+}
+
+}
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.content,
+.archive,
+.videoPage,
+.certificates-page{
+
+animation:fadeUp 1s ease;
+
+}
+
+.card,
+.certificate-card{
+
+animation:fadeUp .8s ease;
+
+}
+/* ================= WATCH BUTTON ================= */
+
+.watch-btn{
+
+    padding:16px 42px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#d4af37;
+
+    color:#000;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.watch-btn:hover{
+
+    transform:translateY(-3px) scale(1.05);
+
+    box-shadow:0 0 30px rgba(212,175,55,.8);
+
+}
+
+
+.lecture-cover{
+
+margin:40px auto;
+
+}
+
+.lecture-cover img{
+
+width:80%;
+
+max-width:850px;
+
+border-radius:20px;
+
+border:2px solid #d4af37;
+
+box-shadow:0 0 30px rgba(212,175,55,.3);
+
+}
+
+.hidden-video{
+
+display:none;
+
+animation:fadeUp .6s ease;
+
+margin-top:35px;
+
+}
+/* ================= LECTURE BANNER ================= */
+
+.lecture-banner{
+
+    position:relative;
+
+    width:90%;
+
+    max-width:950px;
+
+    margin:45px auto;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+
+}
+
+.lecture-banner img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.banner-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.58);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.banner-overlay h2{
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+    line-height:1.4;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.banner-overlay p{
+
+    color:#d4af37;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+}
+.certificate-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    transition:.4s;
+
+}
+
+.certificate-card:hover img{
+
+    transform:scale(1.03);
+
+}
+.certificate-card img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    transition:.4s;
+
+    padding:8px;
+
+}
+
+.certificate-card:hover img{
+
+    transform:scale(1.03);
+
+}
+.lecture-banner{
+    position:relative;
+    width:90%;
+    max-width:950px;
+    margin:40px auto;
+    overflow:hidden;
+    border-radius:20px;
+    border:2px solid #d4af37;
+}
+
+.lecture-banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+.banner-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hidden-video{
+    display:none;
+    margin-top:40px;
+}
+
+.hidden-video video{
+    width:90%;
+    max-width:1000px;
+    border-radius:20px;
+}
+
+/* ================= LECTURE BOX ================= */
+
+.lecture-box{
+
+    width:90%;
+    max-width:900px;
+
+    margin:50px auto;
+
+    padding:60px 40px;
+
+    background:#111;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+
+}
+
+.lecture-box h2{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:38px;
+
+    line-height:1.4;
+
+    margin-bottom:25px;
+
+}
+
+.lecture-box p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+/* ================= LECTURE BOX ================= */
+
+.lecture-box{
+
+    width:90%;
+    max-width:900px;
+
+    margin:50px auto;
+
+    padding:60px 40px;
+
+    background:#111;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+
+}
+
+.lecture-box h2{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:38px;
+
+    line-height:1.4;
+
+    margin-bottom:25px;
+
+}
+
+.lecture-box p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+    margin-bottom:35px;
+
+}
+/* ================= VIDEO CARDS ================= */
+
+.video-list{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+}
+
+.video-card{
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 30px rgba(212,175,55,.4);
+
+}
+
+.video-card h2{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.single-video{
+
+    display:none;
+
+    margin-top:30px;
+
+}
+
+.single-video video{
+
+    width:100%;
+
+    border-radius:15px;
+
+    border:1px solid #d4af37;
+
+}
+
+@media(max-width:768px){
+
+    .video-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+.video-list{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:30px;
+
+}
+
+.video-card{
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    border-radius:20px;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 30px rgba(212,175,55,.4);
+
+}
+
+.video-card h2{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.single-video{
+
+    display:none;
+
+    margin-top:30px;
+
+}
+
+.single-video video{
+
+    width:100%;
+
+    border-radius:15px;
+
+    border:1px solid #d4af37;
+
+}
+
+@media(max-width:768px){
+
+    .video-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* ================= VIDEO PAGE ================= */
+
+.single-video-page{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    background:#111;
+
+    border:2px solid #d4af37;
+
+    border-radius:20px;
+
+    box-shadow:0 0 35px rgba(212,175,55,.25);
+
+}
+
+.single-video-page video{
+
+    width:100%;
+
+    max-height:650px;
+
+    display:block;
+
+    border-radius:12px;
+
+}
+/* ================= VERIFIED BADGE ================= */
+
+.verified-badge{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:18px;
+
+    height:18px;
+
+    margin-left:6px;
+
+    background:#1da1f2;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    vertical-align:middle;
+
+}
+/* ================= CASES & RESULTS ================= */
+
+.cases-results-page{
+
+    min-height:100vh;
+
+    padding:110px 8% 80px;
+
+    background:#000;
+
+}
+
+.cases-results-page h1{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    font-size:55px;
+
+    color:#d4af37;
+
+}
+
+.cases-results-page .subtitle{
+
+    text-align:center;
+
+    color:#aaa;
+
+    margin-top:15px;
+
+    margin-bottom:70px;
+
+}
+
+
+/* ================= CASE CARD ================= */
+
+.case-result-card{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto 60px;
+
+    padding:40px;
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:22px;
+
+    transition:.4s;
+
+}
+
+.case-result-card:hover{
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ================= CASE HEADER ================= */
+
+.case-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.case-header span{
+
+    color:#d4af37;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+.case-header h2{
+
+    color:white;
+
+    font-family:'Cinzel',serif;
+
+    font-size:30px;
+
+    margin-top:10px;
+
+}
+
+
+/* ================= CASE CONTENT ================= */
+
+.case-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+}
+
+
+/* ================= CASE SECTION ================= */
+
+.case-section{
+
+    text-align:center;
+
+}
+
+.case-section h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ================= IMAGES ================= */
+
+.case-images{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.case-images img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.case-images img:hover{
+
+    transform:scale(1.03);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 20px rgba(212,175,55,.3);
+
+}
+
+
+/* ================= CASE INFO ================= */
+
+.case-info{
+
+    margin-top:35px;
+
+    padding-top:25px;
+
+    border-top:1px solid rgba(212,175,55,.2);
+
+    text-align:center;
+
+}
+
+.case-info h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    margin-bottom:12px;
+
+}
+
+.case-info p{
+
+    color:#bbb;
+
+    line-height:1.7;
+
+}
+
+
+/* ================= THREE STAGES ================= */
+
+.three-stage{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.three-stage .case-section{
+
+    flex:1;
+
+}
+
+.case-arrow{
+
+    color:#d4af37;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .cases-results-page{
+
+        padding:100px 20px 60px;
+
+    }
+
+    .cases-results-page h1{
+
+        font-size:38px;
+
+    }
+
+    .case-result-card{
+
+        padding:25px 18px;
+
+    }
+
+    .case-content{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .case-images{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .case-images img{
+
+        height:200px;
+
+    }
+
+    .three-stage{
+
+        flex-direction:column;
+
+    }
+
+    .case-arrow{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+/* ================= RAWDA CASE ================= */
+
+.rawda-case{
+
+    margin-top:35px;
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.3);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.4s;
+
+}
+
+.rawda-case:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 30px rgba(212,175,55,.35);
+
+}
+
+.rawda-case h2{
+
+    color:#fff;
+
+    font-family:'Cinzel',serif;
+
+    font-size:30px;
+
+    margin:15px 0 8px;
+
+}
+
+.case-description{
+
+    color:#aaa;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ================= RAWDA IMAGES ================= */
+
+.rawda-images{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+.rawda-image{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(212,175,55,.3);
+
+}
+
+.rawda-image img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+/* ================= RAWDA VIDEO ================= */
+
+.case-video{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.case-video h3{
+
+    color:#d4af37;
+
+    font-family:'Cinzel',serif;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.case-video iframe{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:500px;
+
+    display:block;
+
+    margin:auto;
+
+    border:2px solid #d4af37;
+
+    border-radius:18px;
+
+    background:#000;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .rawda-case{
+
+        padding:20px;
+
+    }
+
+    .rawda-images{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .rawda-image img{
+
+        height:300px;
+
+    }
+
+    .case-video iframe{
+
+        height:300px;
+
+    }
+
+}
+/* ================= CASE VIDEO FRAME ================= */
+
+.single-video-page {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #111;
+    border: 2px solid #d4af37;
+    border-radius: 20px;
+    box-shadow: 0 0 35px rgba(212,175,55,.25);
+    overflow: hidden;
+}
+
+.single-video-page iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 560px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .single-video-page {
+        width: 95%;
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .single-video-page iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+}
+/* ================= CASES & RESULTS PAGE ONLY ================= */
+
+.cases-page .back-home{
+    margin-top:80px;
+    margin-bottom:70px;
+}
+/* ================= FEATURED DOCTORS & APPRECIATION ================= */
+
+.featured-section{
+    margin-bottom:90px;
+}
+
+.featured-section > h2{
+    color:#d4af37;
+    font-size:34px;
+    margin-bottom:35px;
+    border-left:4px solid #d4af37;
+    padding-left:15px;
+}
+
+.featured-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.featured-card{
+    background:#111;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    transition:.4s;
+}
+
+.featured-card:hover{
+    transform:translateY(-8px);
+    border-color:#d4af37;
+    box-shadow:0 0 30px rgba(212,175,55,.4);
+}
+
+.featured-card img{
+    width:100%;
+    height:320px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:15px;
+    padding:8px;
+    margin-bottom:20px;
+}
+
+.featured-card h3{
+    color:white;
+    font-size:21px;
+    margin-bottom:8px;
+}
+
+.featured-card p{
+    color:#d4af37;
+    font-size:16px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .featured-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured-card img{
+        height:350px;
+    }
+
+}
+/* ================= CONTACT PAGE ================= */
+
+.contact-page{
+    background:#000;
+}
+
+.contact-section{
+
+    min-height:100vh;
+
+    padding:130px 10% 80px;
+
+    background:#000;
+
+    text-align:center;
+
+}
+
+.contact-section h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:55px;
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
+}
+
+.contact-subtitle{
+
+    color:#aaa;
+
+    font-size:18px;
+
+    margin-bottom:60px;
+
+}
+
+
+.contact-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:30px;
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    text-align:left;
+
+    transition:.4s;
+
+}
+
+
+.contact-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 30px rgba(212,175,55,.4);
+
+}
+
+
+.contact-card i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:#000;
+
+    font-size:27px;
+
+    flex-shrink:0;
+
+}
+
+
+.contact-card h3{
+
+    color:#fff;
+
+    font-size:21px;
+
+    margin-bottom:7px;
+
+}
+
+
+.contact-card p{
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+
+
+.contact-back{
+
+    margin-top:70px;
+
+}
+
+
+/* ================= CONTACT MOBILE ================= */
+
+@media(max-width:768px){
+
+    .contact-section{
+
+        padding:120px 20px 60px;
+
+    }
+
+    .contact-section h1{
+
+        font-size:40px;
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-card{
+
+        padding:25px;
+
+    }
+
+}
